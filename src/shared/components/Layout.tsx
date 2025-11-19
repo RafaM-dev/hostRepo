@@ -7,9 +7,9 @@ const Layout = () => {
   const [search, setSearch] = useState("");
 
   return (
-    <div className="bg-neutral-100">
+    <div className="flex flex-col min-h-screen">
       <Header search={search} setSearch={setSearch} />
-      <main>
+      <main className="flex-1">
         <Outlet context={{ search, setSearch }} />
       </main>
       <Footer />

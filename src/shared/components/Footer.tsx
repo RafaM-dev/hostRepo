@@ -1,7 +1,7 @@
 export const Footer = () => {
   return (
     <footer
-      className=" h-[100px] flex justify-center items-center text-body-s mt-10 w-full text-design-neutral-100 bg-design-neutral-800"
+      className=" h-[100px] flex justify-center items-center text-body-s  w-full text-design-neutral-100 bg-design-neutral-800"
       style={{
         padding: "24px 0",
       }}
