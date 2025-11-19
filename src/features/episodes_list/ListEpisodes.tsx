@@ -18,7 +18,9 @@ export const ListEpisodes = () => {
   const { search } = useOutletContext<{ search: string }>();
   const [tabValue, setTabValue] = useState(0);
   const [filterModalOpen, setFilterModalOpen] = useState(false);
-  const [selectedCharacter, setSelectedCharacter] = useState<Character | null>(null);
+  const [selectedCharacter, setSelectedCharacter] = useState<Character | null>(
+    null
+  );
   const [filters, setFilters] = useState<Filters>({
     species: [],
     gender: [],
@@ -120,7 +122,9 @@ export const ListEpisodes = () => {
       </TabPanel>
 
       <TabPanel value={tabValue} index={1}>
-        <CharacterCount count={filteredFavorites.length} />
+        {filteredFavorites.length > 0 && (
+          <CharacterCount count={filteredFavorites.length} />
+        )}
         {filteredFavorites.length === 0 ? (
           <div className="flex flex-col justify-center items-center">
             <EmptyState message="No tienes personajes favoritos aún" />
