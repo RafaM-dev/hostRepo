@@ -2,11 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Variables personalizadas */
 :root {
   --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
 
-  /* Colores personalizados */
   --color-design-primary-100: #E7F3D8;
   --color-design-primary-300: #B6DA8B;
   --color-design-primary-500: #8BC547;
@@ -31,14 +29,12 @@
   --font-size-caption: 12px;
   --font-size-overline: 10px;
   
-  /* Configuración de pesos */
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
 }
 
-/* Clases de utilidad personalizadas para tipografía */
 @layer utilities {
   .text-h1 {
     font-size: var(--font-size-h1) !important;
